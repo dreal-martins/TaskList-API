@@ -1,7 +1,11 @@
 ﻿# TaskList-API
-<h2>this should be inside the config.env</h2>
-<h4>Filename: config.env</h4>
-<p>PORT= your port number</p>  
-<p>DB_STRING= your database string</p>
-<p>JWT_SECRET= your jwt secret </p>
-<p>JWT_EXPIRE= your jwt expiry date</p>
+<h2>this should be inside the utils/config.env</h2>
+<strong>Filename:</strong> config.env
+<br>
+<strong>PORT=</strong> your port number
+<br>
+<strong>DB_STRING=</strong> your database string
+<br>
+<strong>JWT_SECRET=</strong> your jwt secret
+<br>
+<strong>JWT_EXPIRE= </strong> your jwt expiry date
