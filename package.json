@@ -24,6 +24,6 @@
   },
   "engines": {
     "node": "20.10.0",
-    "npm": "latest"
+    "npm": "7.x.x"
   }
 }
