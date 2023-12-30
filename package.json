@@ -23,6 +23,7 @@
     "xss-clean": "^0.1.4"
   },
   "engines": {
-    "node": "20.10.0"
+    "node": "20.10.0",
+    "npm": "latest"
   }
 }
