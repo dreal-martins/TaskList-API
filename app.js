@@ -16,6 +16,9 @@ const rateLimiter = require("express-rate-limit");
 
 app.use(express.json());
 connectDb();
+app.get("/", (req, res) => {
+  res.send("Tasks-list API");
+});
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/task", auth, taskRouter);
 
