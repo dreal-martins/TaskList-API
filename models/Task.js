@@ -13,6 +13,11 @@ const TaskSchema = new mongoose.Schema({
     maxlength: 255,
     minlenght: 3,
   },
+  status: {
+    type: String,
+    enum: ["incomplete", "completed"],
+    default: "incomplete",
+  },
   createdBy: {
     type: mongoose.Types.ObjectId,
     ref: "User",

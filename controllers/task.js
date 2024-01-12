@@ -41,13 +41,15 @@ const createTask = async (req, res, next) => {
 const updateTask = async (req, res, next) => {
   try {
     const {
-      body: { name, description },
+      body: { name, description, status },
       user: { userId },
       params: { id: taskId },
     } = req;
 
-    if (name === "" || description === "") {
-      throw new BadRequestError("Name or Description fields cannot be empty");
+    if (name === "" || description === "" || status === "") {
+      throw new BadRequestError(
+        "Name or Description or Status fields cannot be empty"
+      );
     }
 
     const task = await Task.findByIdAndUpdate(
