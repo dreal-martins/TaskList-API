@@ -67,7 +67,7 @@ const updateTask = async (req, res, next) => {
   }
 };
 
-const deleteTaskq = async (req, res, next) => {
+const deleteTaskwe = async (req, res, next) => {
   try {
     const {
       user: { userId },
