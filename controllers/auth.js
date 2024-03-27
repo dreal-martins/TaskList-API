@@ -103,7 +103,7 @@ const logoutUserw = (req, res, next) => {
 // @desc logout User
 // route POST /auth/logout
 // @access Private
-const logoutUsere = (req, res, next) => {
+const logoutUser = (req, res, next) => {
   try {
     res.removeHeader("Authorization");
     res.status(200).json({ message: "Logout successful" });
