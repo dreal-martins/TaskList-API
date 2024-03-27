@@ -67,7 +67,67 @@ const updateTask = async (req, res, next) => {
   }
 };
 
-const deleteTask = async (req, res, next) => {
+const deleteTaskq = async (req, res, next) => {
+  try {
+    const {
+      user: { userId },
+      params: { id: taskId },
+    } = req;
+
+    const task = await Task.findByIdAndDelete({
+      _id: taskId,
+      createdBy: userId,
+    });
+
+    if (!task) {
+      throw new NotFoundError(`No job with id ${taskId}`);
+    }
+    res.status(200).json({ msg: "delete task successfully" });
+  } catch (error) {
+    next(error);
+  }
+};
+const deleteTaskw = async (req, res, next) => {
+  try {
+    const {
+      user: { userId },
+      params: { id: taskId },
+    } = req;
+
+    const task = await Task.findByIdAndDelete({
+      _id: taskId,
+      createdBy: userId,
+    });
+
+    if (!task) {
+      throw new NotFoundError(`No job with id ${taskId}`);
+    }
+    res.status(200).json({ msg: "delete task successfully" });
+  } catch (error) {
+    next(error);
+  }
+};
+const deleteTaske = async (req, res, next) => {
+  try {
+    const {
+      user: { userId },
+      params: { id: taskId },
+    } = req;
+
+    const task = await Task.findByIdAndDelete({
+      _id: taskId,
+      createdBy: userId,
+    });
+
+    if (!task) {
+      throw new NotFoundError(`No job with id ${taskId}`);
+    }
+    res.status(200).json({ msg: "delete task successfully" });
+  } catch (error) {
+    next(error);
+  }
+};
+const deleteTaskr = async (req, res, next) => {
   try {
     const {
       user: { userId },
