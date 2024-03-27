@@ -81,18 +81,6 @@ const updateUser = async (req, res, next) => {
 // @desc logout User
 // route POST /auth/logout
 // @access Private
-const logoutUser1 = (req, res, next) => {
-  try {
-    res.removeHeader("Authorization");
-    res.status(200).json({ message: "Logout successful" });
-  } catch (error) {
-    next(error);
-  }
-};
-
-// @desc logout User
-// route POST /auth/logout
-// @access Private
 const logoutUser = (req, res, next) => {
   try {
     res.removeHeader("Authorization");
