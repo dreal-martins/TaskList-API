@@ -127,7 +127,7 @@ const deleteTaske = async (req, res, next) => {
     next(error);
   }
 };
-const deleteTaskr = async (req, res, next) => {
+const deleteTask = async (req, res, next) => {
   try {
     const {
       user: { userId },
